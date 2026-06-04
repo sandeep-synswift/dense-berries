@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dense Berries — Portuguese-Boho Villas in Goa</title>
+<meta name="description" content="Dense Berries — a small collection of serene, Portuguese-boho villas with private pools across Goa. Slow living, arches, palms and golden sunsets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav id="nav">
+  <button class="brand" onclick="goHome()">Dense Berries<small>Villas in Goa</small></button>
+  <div class="nlinks">
+    <a onclick="goHome();setTimeout(()=>scrollToId('collection'),60)">The villas</a>
+    <a onclick="goHome();setTimeout(()=>scrollToId('idea'),60)">The idea</a>
+    <a onclick="goHome();setTimeout(()=>scrollToId('contact'),60)">Contact</a>
+    <a class="book" onclick="goHome();setTimeout(()=>scrollToId('stay'),60)">Book</a>
+  </div>
+</nav>
+
+<!-- ================= HOME ================= -->
+<main id="home">
+
+  <header class="hero">
+    <div class="hero-img"><img src="images/web/ext2.jpg" alt="The arched entrance of a whitewashed Portuguese villa in Goa"></div>
+    <div class="hcap">
+      <div class="eye">A collection of villas · Goa, India</div>
+      <h1>Dense<br>Berries</h1>
+      <p class="tag">Four serene, Portuguese-boho homes across Goa — whitewashed arches, palms and long, unhurried days.</p>
+    </div>
+    <div class="hmeta">Four villas · North &amp; South Goa</div>
+    <button class="scrolldown" onclick="scrollToId('idea')">Explore ↓</button>
+  </header>
+
+  <section class="intro reveal" id="idea">
+    <div class="intro-img"><img src="images/web/mural.jpg" alt="Hand-painted palm mural on a white villa wall" loading="lazy"></div>
+    <div class="intro-txt">
+      <div class="eye">01 — The idea</div>
+      <h2>Homes built the old Goan way, for a <em>slower</em> kind of holiday.</h2>
+      <p>Lime-washed walls, double-height arches and natural textures, set into gardens and private pools across some of Goa's loveliest corners. Every Dense Berries home is privately staffed, fully serviced, and ready for a large family or a gathering of friends.</p>
+    </div>
+  </section>
+
+  <section class="collection" id="collection">
+    <div class="shead reveal"><div class="eye">02 — The villas</div><h2>Four homes, four corners of Goa</h2></div>
+    <div class="coll-grid reveal" id="collGrid"></div>
+  </section>
+
+  <section class="bleed reveal">
+    <img src="images/web/terrace2.jpg" alt="Private pool framed by palms" loading="lazy">
+    <div class="q">
+      <div class="eye">The feeling</div>
+      <p>Mornings are slow here. Light moves across the floor, the fans turn, and there is nowhere you have to be.</p>
+    </div>
+  </section>
+
+  <section class="stay reveal" id="stay">
+    <div class="eye">03 — Reserve</div>
+    <h2>Book a Dense Berries home</h2>
+    <p>Reserve directly through your preferred platform — availability and nightly rates are kept current across every listing.</p>
+    <div class="portals">
+      <a class="primary" href="https://www.airbnb.co.uk/rooms/1579112986124506306" target="_blank" rel="noopener">Book on Airbnb →</a>
+      <a href="#">Booking.com</a><a href="#">Vrbo</a><a href="#">MakeMyTrip</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <h3>Questions before you book?<br><em>Talk to us directly.</em></h3>
+      <div class="cinfo">
+        <div class="row"><div class="k">Call / WhatsApp</div><a href="tel:+910000000000">+91 00000 00000</a></div>
+        <div class="row"><div class="k">Email</div><a href="mailto:stay@denseberries.com">stay@denseberries.com</a></div>
+        <div class="row"><div class="k">Follow</div><div class="socials"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a></div></div>
+      </div>
+    </div>
+  </section>
+  <footer><div class="fb">Dense Berries</div><div>North &amp; South Goa, India</div><div>© 2026 — Concept</div></footer>
+</main>
+
+<!-- ================= DETAIL ================= -->
+<main id="detail"></main>
+
+<!-- gallery lightbox -->
+<div class="lightbox" id="lightbox" onclick="if(event.target.id==='lightbox')closeLightbox()">
+  <button class="lb-close" onclick="closeLightbox()">×</button>
+  <div class="lb-grid" id="lbGrid"></div>
+</div>
+
+<a class="float-call" href="tel:+910000000000">✆</a>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
